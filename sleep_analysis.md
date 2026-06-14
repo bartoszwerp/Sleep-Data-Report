@@ -1160,6 +1160,26 @@ The wage variable was the most difficult part of the analysis. Hourly wage is mi
 
 Instead, I used the full sample for the main models and excluded wage from those specifications. This allowed me to keep all 706 observations. Then, as a secondary check, I estimated a worker-only model with log hourly wage included. In that model, wage was not statistically significant, while work time remained negative and significant. This suggests that, in this dataset, actual time spent working matters more for sleep than the wage level itself.
 
+<p align="center"><strong>Model 3 equation</strong></p>
+
+$$
+\begin{aligned}
+sleep_i =\;& \beta_0 
++ \beta_1 work_i
++ \beta_2 male_i
++ \beta_3 youngchild_i
++ \beta_4 education_i \\
+&+ \beta_5 goodhealth_i
++ \beta_6 married_i
++ \beta_7 south_i
++ \beta_8 smsa_i \\
+&+ \beta_9 union_i
++ \beta_{10} selfemployed_i
++ \beta_{11} spouseworks_i
++ \varepsilon_i
+\end{aligned}
+$$
+
 Among the three final candidate models, Model 3 has the highest adjusted R-squared and the lowest AIC, so I treat it as the best descriptive fit. However, the improvement over the other models is not very large. Model 2 is simpler and has the best BIC, while Model 1 is the most directly theory-guided. For that reason, I would not overstate Model 3 as a perfect final model. The stronger point is that the main result about work time is stable across different specifications.
 
 The explanatory power of the models is limited. Even the best model explains only about 13.6% of the variation in sleep time. This is not surprising, because sleep depends on many personal and lifestyle factors that are not fully captured in the dataset, such as stress, commuting, household duties, habits, etc.
